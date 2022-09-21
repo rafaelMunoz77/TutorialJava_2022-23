@@ -17,7 +17,8 @@ public class Ejemplo02_TiposPrimitivos {
 		// Impresión en la consola de salida de las variabless
 		System.out.println("El valor de la variable numEntero es: " + numEntero +
 				"\nEl valor de la variable numFlotante es: " + numFlotante +
-				"\nEl valor de la variable numDouble es: " + numDouble);
+				"\nEl valor de la variable numDouble es: " + numDouble + 
+				"\nY la suma de todos vale: " + (numEntero + numFlotante + numDouble));
 	}
 	    
 	
