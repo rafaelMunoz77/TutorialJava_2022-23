@@ -10,7 +10,7 @@ public class Ejemplo05_OperadoresANivelDeBits {
 	    // dos variables.
 	    // Por favor, recuerda el significado de "inicialización de variable",
 	    // es muy importante y muy utilizado entre programadores.
-	    int entero1 = 30, entero2 = 3;
+	    int entero1 = 5, entero2 = 3;
 
 	    // Operación lógica AND. Esta operación, al igual que todas las de
 	    // este ejercicio, actua a nivel de los bits que forman el valor
