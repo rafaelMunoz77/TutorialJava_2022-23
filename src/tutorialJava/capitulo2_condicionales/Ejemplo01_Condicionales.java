@@ -1,5 +1,7 @@
 package tutorialJava.capitulo2_condicionales;
 
+import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 import tutorialJava.Utils;
@@ -13,25 +15,47 @@ public class Ejemplo01_Condicionales {
 	 * @param args
 	 */
 	public static void main (String args[]) {		
-		primerEjemploCondicionalSimple();
+//		condicionalMuySimple();
+//		primerEjemploCondicionalSimple();
 //		ejemploCondicionalCompuesto();
 //		ejemploCondicionalAnidado();
-//		ejemploCondicionalMultiple();
+		ejemploCondicionalMultiple();
 //		ejemploOperadorTernario();
 	}
 	
 	
 	/**
+	 * 
+	 */
+	public static void condicionalMuySimple () {
+		int num = (int) Math.round(Math.random() * 100);
+		
+		System.out.println("num: " + num);
+		
+		if (num != 0) {
+			System.out.println("Positivo");
+		}
+		else {
+			System.out.println("Negativo o cero");
+		}
+		
+		System.out.println("Terminado");
+
+	}
+	
+
+	
+	/**
 	 * Cómo utilizar simplemente un operador if
 	 */
 	public static void primerEjemploCondicionalSimple () {
-		int numero = Utils.obtenerNumeroAzar(); // Pido un número entre 0 y 100
+		int numero = (int) Math.round(Math.random() * 100); // Pido un número entre 0 y 100
 		System.out.println(numero); // Lo imprimo
 		
 		// Determino si el número está entre unos límites
 		if ( (numero >= 10 && numero <= 50) || (numero >= 70 && numero <= 90) ) {
 			System.out.println("Bingooooooooo");
-			}
+		}
 	}
 	
 	
@@ -39,7 +63,7 @@ public class Ejemplo01_Condicionales {
 	 * Ejemplo de operador if con else	
 	 */
 	public static void ejemploCondicionalCompuesto () {
-		int numero = Utils.obtenerNumeroAzar(); // Obtengo número al azar
+		int numero = (int) Math.round(Math.random() * 100); // Obtengo número al azar
 		System.out.println("Var número: " + numero);
 		
 		// Determino si es mayor de 50 o no lo es
@@ -56,32 +80,21 @@ public class Ejemplo01_Condicionales {
 	 * Los condicionales pueden anidarse unos dentro de otros
 	 */
 	public static void ejemploCondicionalAnidado () {
-//		int numero = Utils.obtenerNumeroAzar(); // Pido número al azar
-		int numero = 50;
-		System.out.println("Var número: " + numero);
+		int numero = (int) Math.round(Math.random() * 100); // Pido número al azar
+		System.out.println("Número al azar: " + numero);
 		
-		if (numero == 50) {
-			System.out.println("lo que sea");
+		if (numero > 0) {
+			System.out.println("Es positivo");
 		}
 		else {
-			if (numero < 50) {
-				System.out.println("lo que sea");
+			if (numero < 0) {
+				System.out.println("Es negativo");
 			}		
-		}
-		
-		
-		// Con un condicional anidado determino muchas posibles situaciones
-		if (numero > 50) { // El número es mayor de 50
-			System.out.println("El número es mayor de 50");
-		}
-		else { // No s� si el número es igual o menor a 50
-			if (numero == 50) { // El número es igual a 50
-				System.out.println("El número es 50");
-			}
-			else { // El número es menor a 50
-				System.out.println("El número es menor de 50");
+			else {
+				System.out.println("El número es cero");
 			}
 		}
+		
 	}
 
 	
@@ -89,7 +102,7 @@ public class Ejemplo01_Condicionales {
 	 * Ejemplo de switch
 	 */
 	public static void ejemploCondicionalMultiple () {
-		int nota = 20;
+		int nota = 0;
 		
 		// switch decidirá el camino a tomar en función del valor
 		// de la variable
