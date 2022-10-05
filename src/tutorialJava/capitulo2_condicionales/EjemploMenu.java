@@ -30,6 +30,8 @@ public class EjemploMenu {
 		case 2:
 			System.out.println("La resta vale: " + (numero1 - numero2));
 			break;
+		default:
+			System.out.println("La opción " + opcion + " no está contemplada");
 		}
 	}
 

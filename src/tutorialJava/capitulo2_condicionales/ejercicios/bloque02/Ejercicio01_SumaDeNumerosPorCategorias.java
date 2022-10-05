@@ -9,7 +9,8 @@ public class Ejercicio01_SumaDeNumerosPorCategorias {
 		int num;
 		int sumaNegativos = 0, sumaPequenios = 0;
 		int sumaMedios = 0, sumaGrandes = 0;
-		
+
+		// Gestión del primer número
 		System.out.println("Introduce un número: ");
 		num = sc.nextInt();
 		if (num < 0) {
@@ -27,8 +28,57 @@ public class Ejercicio01_SumaDeNumerosPorCategorias {
 					sumaGrandes += num;
 				}
 			}
-		}
-		
-	}
+		}		
+	
+		// Segundo 
+		System.out.println("Introduce un número: ");
+		num = sc.nextInt();
+		if (num < 0) 
+			sumaNegativos = sumaNegativos + num;
+		else if (num <= 25) 
+			sumaPequenios += num;
+		else if (num <= 250)
+			sumaMedios += num;
+		else 
+			sumaGrandes += num;
+
+		// Tercero 
+		System.out.println("Introduce un número: ");
+		num = sc.nextInt();
+		if (num < 0) 
+			sumaNegativos = sumaNegativos + num;
+		else if (num <= 25) 
+			sumaPequenios += num;
+		else if (num <= 250)
+			sumaMedios += num;
+		else 
+			sumaGrandes += num;
+	
+		// Cuarto
+		System.out.println("Introduce un número: ");
+		num = sc.nextInt();
+		if (num < 0) 
+			sumaNegativos = sumaNegativos + num;
+		else if (num <= 25) 
+			sumaPequenios += num;
+		else if (num <= 250)
+			sumaMedios += num;
+		else 
+			sumaGrandes += num;
+
+		// Quinto
+		System.out.println("Introduce un número: ");
+		num = sc.nextInt();
+		if (num < 0) 
+			sumaNegativos = sumaNegativos + num;
+		else if (num <= 25) 
+			sumaPequenios += num;
+		else if (num <= 250)
+			sumaMedios += num;
+		else 
+			sumaGrandes += num;
+	
+	}	
+
 
 }
