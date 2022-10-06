@@ -4,11 +4,18 @@ import tutorialJava.Utils;
 
 public class Ejemplo02_Bucle_While {
 	
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main (String args[]) {
 		pedirNumerosAlUsuario();
 	}
 	
 
+	/**
+	 * 
+	 */
 	public static void cuentaAdelanteYCuentaAtras() {
 		int i;
 		
@@ -28,7 +35,9 @@ public class Ejemplo02_Bucle_While {
 	}
 	
 	
-	
+	/**
+	 * 
+	 */
 	public static void pedirNumerosAlUsuario () {
 		int numero = -1;
 		
@@ -40,6 +49,9 @@ public class Ejemplo02_Bucle_While {
 	}
 	
 	
+	/**
+	 * 
+	 */
 	public static void pedirNumerosAlUsuarioYObtenerSuma () {
 		int numero = -1, acumulador = 0;
 		

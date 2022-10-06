@@ -4,6 +4,9 @@ import tutorialJava.Utils;
 
 public class Ejemplo03_Bucle_DoWhile {
 	
+	/**
+	 * 
+	 */
 	public static void cuentaAdelante () {
 		int i;
 		
@@ -15,7 +18,9 @@ public class Ejemplo03_Bucle_DoWhile {
 	}
 
 	
-	
+	/**
+	 * 
+	 */
 	public static void cuentaAtras () {
 		int i;
 		
@@ -29,7 +34,9 @@ public class Ejemplo03_Bucle_DoWhile {
 	
 	
 	
-	
+	/**
+	 * 
+	 */
 	public static void pedirNumerosAlUsuario () {
 		int numero;
 		
