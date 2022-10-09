@@ -1,6 +1,6 @@
-package tutorialJava.capitulo5_Arrays_y_Colecciones.ejemplo01_arraysPrimitivos;
+package tutorialJava.capitulo4_Arrays;
 
-public class OrdenacionDeUnArray {
+public class Ej02_OrdenacionDeUnArray {
 
 	public static void main(String[] args) {
 //		int array[] = new int[] {50, 100, 23, 2, 48, 66, 4};

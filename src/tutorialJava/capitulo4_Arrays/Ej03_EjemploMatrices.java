@@ -1,8 +1,8 @@
-package tutorialJava.capitulo5_Arrays_y_Colecciones.ejemplo01_arraysPrimitivos;
+package tutorialJava.capitulo4_Arrays;
 
 import tutorialJava.Utils;
 
-public class EjemploMatrices {
+public class Ej03_EjemploMatrices {
 
 	public static void main(String[] args) {
 		// Declaraci�n de una matriz

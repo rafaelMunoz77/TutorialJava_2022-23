@@ -1,4 +1,4 @@
-package tutorialJava.capitulo7_Acceso_A_Datos;
+package tutorialJava.capitulo8_Acceso_A_Datos;
 
 import java.sql.DriverManager;
 import java.sql.ResultSet;

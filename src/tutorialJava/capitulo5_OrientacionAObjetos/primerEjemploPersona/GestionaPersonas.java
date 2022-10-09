@@ -1,4 +1,4 @@
-package tutorialJava.capitulo4_OO.primerEjemploPersona;
+package tutorialJava.capitulo5_OrientacionAObjetos.primerEjemploPersona;
 
 
 public class GestionaPersonas {

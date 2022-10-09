@@ -1,4 +1,4 @@
-package tutorialJava.capitulo7_Acceso_A_Datos;
+package tutorialJava.capitulo8_Acceso_A_Datos;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,11 +12,11 @@ public class ConnectionManagerV1 {
 	
 	
 	public static Connection getConexion () throws SQLException {
-		// Si es la primera vez que accedemos a la conexión, debemos instanciarla
+		// Si es la primera vez que accedemos a la conexiï¿½n, debemos instanciarla
 		if (conexion == null) {
 			conectar();
 		}
-		// Compruebo si la conexión sigue estando activa
+		// Compruebo si la conexiï¿½n sigue estando activa
 		while (!conexion.isValid(5)) {
 			conectar();
 		}

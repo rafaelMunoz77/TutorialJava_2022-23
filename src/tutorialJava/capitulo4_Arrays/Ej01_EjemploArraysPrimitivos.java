@@ -1,19 +1,19 @@
-package tutorialJava.capitulo5_Arrays_y_Colecciones.ejemplo01_arraysPrimitivos;
+package tutorialJava.capitulo4_Arrays;
 
 import java.util.Iterator;
 
 import tutorialJava.Utils;
 
-public class EjemploArraysPrimitivos {
+public class Ej01_EjemploArraysPrimitivos {
 	
 	/**
 	 * Método principal
 	 * @param args
 	 */
 	public static void main(String[] args) {
-//		primerEjemploArray();
+		primerEjemploArray();
 //		segundoEjemploArray();
-		tercerEjemploArray();
+//		tercerEjemploArray();
 	}
 	
 	

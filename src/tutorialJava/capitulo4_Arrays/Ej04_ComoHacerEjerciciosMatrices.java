@@ -1,10 +1,10 @@
-package tutorialJava.capitulo5_Arrays_y_Colecciones.ejemplo01_arraysPrimitivos;
+package tutorialJava.capitulo4_Arrays;
 
 import java.util.Iterator;
 
 import tutorialJava.Utils;
 
-public class ComoHacerEjerciciosMatrices {
+public class Ej04_ComoHacerEjerciciosMatrices {
 
 	/**
 	 * 
