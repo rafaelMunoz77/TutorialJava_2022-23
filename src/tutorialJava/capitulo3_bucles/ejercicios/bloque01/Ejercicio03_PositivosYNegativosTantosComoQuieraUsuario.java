@@ -8,10 +8,8 @@ public class Ejercicio03_PositivosYNegativosTantosComoQuieraUsuario {
 		int suma = 0, num, repeticiones, contPositivos = 0, contNegativos = 0;
 		Scanner sc = new Scanner (System.in);
 		
-		System.out.println("¿Cuántos números va a introduci?");
+		System.out.println("¿Cuántos números va a introducir?");
 		repeticiones = sc.nextInt();
-		
-		
 		
 		for (int i = 0; i < repeticiones; i++) {
 			System.out.println("Introduzca un número: ");
