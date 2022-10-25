@@ -11,9 +11,9 @@ public class Ej01_EjemploArraysPrimitivos {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		primerEjemploArray();
+//		primerEjemploArray();
 //		segundoEjemploArray();
-//		tercerEjemploArray();
+		tercerEjemploArray();
 	}
 	
 	
@@ -22,12 +22,12 @@ public class Ej01_EjemploArraysPrimitivos {
 	 */
 	public static void primerEjemploArray () {
 		// Declaración del array, a través de la sentencia "new"
-		int numeros[] = new int[10];
+		int numeros[] = new int[15000000];
 		
 		
 		// Inicialización de los valores del array
 		for (int i = 0; i < numeros.length; i++) {
-			numeros[i] = Utils.obtenerNumeroAzar();
+			numeros[i] = (int) Math.round(Math.random() * 100);
 		}
 
 		// Recorrido del array para imprimir sus valores en pantalla
@@ -66,12 +66,12 @@ public class Ej01_EjemploArraysPrimitivos {
 		
 		// Recorro para inicializar el array
 		for (int i = 0; i < array.length; i++) {
-			array[i] = (int) Math.round(Math.random()*100);
+			array[i] = (int) Math.round(Math.random()*10000);
 		}
 		
 		// Recorro e imprimo en pantalla
 		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i] + " ");
+//			System.out.print(array[i] + " ");
 		}
 		System.out.println("");
 		

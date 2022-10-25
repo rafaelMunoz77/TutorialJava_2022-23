@@ -29,6 +29,7 @@ public class Ejercicio02_NumerosPrimosOCompuestoEntreLimitesSinFor {
 			while (i < numInvestigado) {
 				if (numInvestigado % i == 0) { // He encontrado un divisor
 					numeroTieneDivisores = true;
+					break;
 				}
 				i++;
 			}

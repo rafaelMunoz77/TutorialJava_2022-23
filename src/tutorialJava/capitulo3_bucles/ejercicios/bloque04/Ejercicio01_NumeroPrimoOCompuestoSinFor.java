@@ -22,6 +22,7 @@ public class Ejercicio01_NumeroPrimoOCompuestoSinFor {
 		while (i < numUsuario) {
 			if (numUsuario % i == 0) { // He encontrado un divisor
 				numeroTieneDivisores = true;
+				break;
 			}
 			i++;
 		}

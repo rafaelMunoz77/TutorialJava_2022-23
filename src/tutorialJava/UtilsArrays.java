@@ -7,6 +7,14 @@ package tutorialJava;
  */
 public class UtilsArrays {
 
+	
+	public static void inicializaArray (int array[]) {
+		for (int i = 0; i < array.length; i++) {
+			array[i] = Utils.obtenerNumeroAzar();
+		}
+	}
+	
+	
 	/**
 	 * 
 	 * @param array

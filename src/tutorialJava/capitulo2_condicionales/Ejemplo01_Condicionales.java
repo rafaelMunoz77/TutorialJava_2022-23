@@ -19,8 +19,8 @@ public class Ejemplo01_Condicionales {
 //		primerEjemploCondicionalSimple();
 //		ejemploCondicionalCompuesto();
 //		ejemploCondicionalAnidado();
-		ejemploCondicionalMultiple();
-//		ejemploOperadorTernario();
+//		ejemploCondicionalMultiple();
+		ejemploOperadorTernario();
 	}
 	
 	

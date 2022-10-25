@@ -19,7 +19,7 @@ public class Ejemplo01_Bucle_For {
 //		cuentaAdelanteConMultiplos();
 //		tablaMultiplicar();
 //		mayorDeUnaSerieDeNumeros();
-		numerosPrimos();
+//		numerosPrimos();		
 	}
 	
 	
