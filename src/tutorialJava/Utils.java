@@ -52,7 +52,16 @@ public class Utils {
 	 */
 	public static int obtenerEnteroPorScanner() {
 		Scanner sc = new Scanner(System.in);
-		return sc.nextInt();
+		
+		while (true) {
+			try {
+				return sc.nextInt();
+			} catch (Exception ex) {
+				System.out.println("Error, introduce un número entero: ");
+				sc.nextLine();
+			}
+		}
+		
 	}
 	
 	/**

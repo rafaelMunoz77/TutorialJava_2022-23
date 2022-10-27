@@ -61,6 +61,56 @@ public class UtilsArrays {
 	/**
 	 * 
 	 * @param array
+	 * @return
+	 */
+	public static int sumaDelArray (int array[]) {
+		int suma = 0;
+		for (int i = 0; i < array.length; i++) {
+			suma += array[i];
+		}
+		return suma;
+	}
+	
+	/**
+	 * 
+	 * @param array
+	 * @return
+	 */
+	public static float mediaDelArray (int array[]) {
+		return sumaDelArray(array) / (float) array.length;
+	}
+	
+	/**
+	 * 
+	 * @param array
+	 * @return
+	 */
+	public static int menorDelArray (int array[]) {
+		int menor = array[0];
+		for (int i = 1; i < array.length; i++) {
+			if (array[i] < menor) menor = array[i];
+		}
+		return menor;
+	}
+	
+	
+	/**
+	 * 
+	 * @param array
+	 * @return
+	 */
+	public static int mayorDelArray (int array[]) {
+		int mayor = array[0];
+		for (int i = 1; i < array.length; i++) {
+			if (array[i] > mayor) mayor = array[i];
+		}
+		return mayor;
+	}
+	
+	
+	/**
+	 * 
+	 * @param array
 	 */
 	public static void ordenaArray (int array[]) {
 
