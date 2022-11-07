@@ -100,4 +100,40 @@ public class Utils {
 	public static int obtenerEntero() {
 		return obtenerEnteroPorJOptionPane();
 	}
+	
+	/**
+	 * 
+	 * @param mensajeAlUsuario
+	 * @param limiteInf
+	 * @param limiteSup
+	 * @return
+	 */
+	public static int obtenerEnteroEntreLimites (String mensajeAlUsuario, int limiteInf,
+			int limiteSup) {
+		int numeroADelvolver = 0;
+		
+		Scanner sc = new Scanner(System.in);
+		boolean datoCorrecto;
+		do {
+			try {
+				datoCorrecto = true;
+				System.out.println(mensajeAlUsuario);
+				numeroADelvolver = sc.nextInt();
+
+				if (numeroADelvolver < limiteInf || numeroADelvolver > limiteSup) {
+					datoCorrecto = false;
+					System.out.println("ERROR, debes introducir un número entre " +
+							limiteInf + " y " + limiteSup);
+				}
+			}
+			catch (Exception ex) {
+				System.out.println("ERROR, no has introducido un dato númerico entre " + 
+						limiteInf + " y " + limiteSup);
+				sc.next();
+				datoCorrecto = false;
+			}
+		} while (!datoCorrecto);
+
+		return numeroADelvolver;
+	}
 }

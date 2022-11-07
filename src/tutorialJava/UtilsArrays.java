@@ -41,6 +41,40 @@ public class UtilsArrays {
 		}
 		return array;
 	}
+	
+	
+	/**
+	 * 
+	 * @param filas
+	 * @param cols
+	 * @param valorInicial
+	 * @return
+	 */
+	public static int[][] creaEInicializaMatriz (int filas, int cols, int valorInicial) {
+		int m[][] = new int[filas][cols];
+		
+		for (int i = 0; i < m.length; i++) {
+			for (int j = 0; j < m[i].length; j++) {
+				m[i][j] = valorInicial;
+			}
+		}
+		
+		return m;
+	}
+	
+	
+	/**
+	 * 
+	 * @param m
+	 */
+	public static void mostrarMatriz (int m[][]) {
+		for (int i = 0; i < m.length; i++) {
+			for (int j = 0; j < m[i].length; j++) {
+				System.out.print(m[i][j] + "\t");
+			}
+			System.out.println();
+		}
+	}
 
 	/**
 	 * 
