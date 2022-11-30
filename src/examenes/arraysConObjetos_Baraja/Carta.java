@@ -59,7 +59,7 @@ public class Carta {
 	}
 	@Override
 	public String toString() {
-		return "Carta [palo=" + palo + ", valor=" + valor + ", id=" + id + "]";
+		return "Carta " + this.id + ": " + valor + palo + " ";
 	}
 	
 	
