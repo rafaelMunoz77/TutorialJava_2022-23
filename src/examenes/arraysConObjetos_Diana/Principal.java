@@ -2,6 +2,8 @@ package examenes.arraysConObjetos_Diana;
 
 import java.util.Iterator;
 
+import tutorialJava.Utils;
+
 public class Principal {
 
 	public static void main(String[] args) {
@@ -35,16 +37,57 @@ public class Principal {
 		
 		
 		// Turnos de jugadores
-		for (int i = 0; i < 10; i++) {
-			for (int j = 0; j < jugadores.length; j++) {
-				System.out.println("Turno del jugador: " + jugadores[j].getNombre());
-				mostrarMenu(tiradas);
+		for (int i = 0; i < 10; i++) { // Diez turnos
+			for (int j = 0; j < jugadores.length; j++) { // Para cada jugador
+				for (int k = 0; k < 3; k++) {
+					System.out.println("\n\nTurno del jugador: " + jugadores[j].getNombre());
+					System.out.println("Dardo número " + (k + 1));
+//					int opcionJugador = mostrarMenu(tiradas);
+	
+					int opcionJugador = Utils.obtenerNumeroAzar(0, 61);
+					
+					// Compruebo si la jugada elegida se cumple
+					int azar = Utils.obtenerNumeroAzar(0, 100);
+					if (azar <= tiradas[opcionJugador].getProbabilidad()) {
+						jugadores[j].setPuntuacion(jugadores[j].getPuntuacion() +
+								tiradas[opcionJugador].getPuntos());
+					}
+				}
 			}
-			
-			
-			
+		}
+		
+		ordenaJugadoresPorPuntuacion(jugadores);
+		
+		// Imprimo podium de los jugadores
+		for (int i = 0; i < 3; i++) {
+			System.out.println("Jugador: " + jugadores[i].getNombre() + 
+					" - Puntuación: " + jugadores[i].getPuntuacion());
 		}
 	}
+	
+
+	/**
+	 * 
+	 * @param jugadores
+	 */
+	private static void ordenaJugadoresPorPuntuacion (Jugador[] jugadores) {
+		boolean seHanHechoIntercambios = false;
+		do {
+			seHanHechoIntercambios = false;
+
+			for (int i = 0; i < jugadores.length - 1; i++) {
+				if (jugadores[i].getPuntuacion() < jugadores[i+1].getPuntuacion()) {
+					Jugador aux = jugadores[i+1];
+					jugadores[i+1] = jugadores[i];
+					jugadores[i] = aux;
+					seHanHechoIntercambios = true;
+				}
+			}
+
+		} while (seHanHechoIntercambios == true);
+
+	}
+	
 
 	/**
 	 * 
@@ -52,10 +95,12 @@ public class Principal {
 	 * @return
 	 */
 	private static int mostrarMenu (Tirada tiradas[]) {
+		System.out.println("MENÚ DE JUGADAS");
 		for (int i = 0; i < tiradas.length; i++) {
-			System.out.println(i + "Tirada: " + tiradas[i].getDescripcion());
+			System.out.println(i + ".- Tirada: " + tiradas[i].getDescripcion());
 		}
-		return 0;
+
+		return Utils.obtenerEnteroConDescripcion("Elija su opción: ");
 	}
 
 }
