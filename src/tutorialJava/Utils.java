@@ -136,4 +136,24 @@ public class Utils {
 
 		return numeroADelvolver;
 	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public static String obtenerCadena () {
+		Scanner sc = new Scanner(System.in);
+		return sc.nextLine();
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public static String obtenerCadenaConDescripcion (String desc) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println(desc);
+		return sc.nextLine();
+	}
+	
 }
